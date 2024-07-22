@@ -1,0 +1,65 @@
+.custom-date-range-picker .rdrDefinedRangesWrapper {
+  display: none;
+}
+
+.custom-date-range-picker .rdrCalendarWrapper {
+  max-width: 270px;
+  font-size: 12px;
+}
+
+.custom-date-range-picker .rdrMonth {
+  flex: 1 0 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.custom-date-range-picker .rdrMonthName {
+  font-size: 14px;
+}
+
+.custom-date-range-picker .rdrWeekDays {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-date-range-picker .rdrWeekDay {
+  font-size: 10px;
+  width: 14.28%;
+  text-align: center;
+}
+
+.custom-date-range-picker .rdrDays {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.custom-date-range-picker .rdrDay {
+  height: 35px;
+  width: 14.28%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-date-range-picker .rdrDayNumber span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.custom-date-range-picker .rdrDayDisabled {
+  opacity: 0.5;
+}
+
+.custom-date-range-picker .rdrDateRangeWrapper {
+  width: 100%;
+}
+
+.custom-date-range-picker .rdrMonthAndYearPickers {
+  font-size: 12px;
+}
+
+.custom-date-range-picker .rdrMonthPicker,
+.custom-date-range-picker .rdrYearPicker {
+  width: auto;
+}
