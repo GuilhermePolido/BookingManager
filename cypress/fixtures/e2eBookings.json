@@ -1,0 +1,662 @@
+[
+    {
+        "id": "3f156384-db79-451b-9569-14ea9dd7eb4e",
+        "name": "James Jones",
+        "phone": "+76 8123002113",
+        "status": "PREBOOKING",
+        "typeRoom": "7",
+        "room": "909",
+        "email": "dfacbfaf08@example.com",
+        "documentNumber": "7084574671",
+        "accommodation": {
+            "startDate": "2024-08-05T15:45:56.460311",
+            "endDate": "2024-08-07T15:45:56.460311",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "60637dfa-bd10-4254-aefc-f56186ea1459",
+        "name": "Robert Johnson",
+        "phone": "+83 9011256313",
+        "status": "BOOKING",
+        "typeRoom": "3",
+        "room": "303",
+        "email": "8ff38c8cf0@example.com",
+        "documentNumber": "2884366905",
+        "accommodation": {
+            "startDate": "2024-07-30T15:45:56.461407",
+            "endDate": "2024-08-01T15:45:56.461407",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "1d3c003d-487b-4774-99d3-5bdfcb564637",
+        "name": "James Jones",
+        "phone": "+27 7693223518",
+        "status": "CHECKIN",
+        "typeRoom": "5",
+        "room": "405",
+        "email": "a59b354bcf@example.com",
+        "documentNumber": "5221909449",
+        "accommodation": {
+            "startDate": "2024-08-14T15:45:56.461911",
+            "endDate": "2024-08-20T15:45:56.461911",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "01fe3889-3023-4223-82ca-52795d81125a",
+        "name": "Linda Brown",
+        "phone": "+71 9793656064",
+        "status": "CHECKIN",
+        "typeRoom": "2",
+        "room": "202",
+        "email": "09c8d4c353@example.com",
+        "documentNumber": "8253713785",
+        "accommodation": {
+            "startDate": "2024-08-12T15:45:56.462326",
+            "endDate": "2024-08-17T15:45:56.462326",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "b2e17d6f-9de9-49d9-989b-83c6c4b3f750",
+        "name": "Robert Brown",
+        "phone": "+96 8229140258",
+        "status": "BOOKING",
+        "typeRoom": "4",
+        "room": "304",
+        "email": "b8e4ed0f79@example.com",
+        "documentNumber": "6125623730",
+        "accommodation": {
+            "startDate": "2024-08-17T15:45:56.462445",
+            "endDate": "2024-08-19T15:45:56.462445",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "bd05104b-eeb3-42d8-b91c-d240a09d9a9d",
+        "name": "Michael Miller",
+        "phone": "+70 6096050023",
+        "status": "CANCELED",
+        "typeRoom": "10",
+        "room": "1010",
+        "email": "ea5bb2a8ab@example.com",
+        "documentNumber": "1681534710",
+        "accommodation": {
+            "startDate": "2024-08-06T15:45:56.462530",
+            "endDate": "2024-08-18T15:45:56.462530",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "e1c328d3-8645-4393-852f-77777a700c1e",
+        "name": "Robert Smith",
+        "phone": "+54 5337077517",
+        "status": "PREBOOKING",
+        "typeRoom": "3",
+        "room": "303",
+        "email": "cc624ab723@example.com",
+        "documentNumber": "5879041537",
+        "accommodation": {
+            "startDate": "2024-08-12T15:45:56.462592",
+            "endDate": "2024-08-13T15:45:56.462592",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "96ea95ff-6e94-45a3-9cfe-11e9719f07f0",
+        "name": "Robert Davis",
+        "phone": "+84 3979084508",
+        "status": "CHECKIN",
+        "typeRoom": "7",
+        "room": "607",
+        "email": "ac8797f1c2@example.com",
+        "documentNumber": "7210357578",
+        "accommodation": {
+            "startDate": "2024-07-29T15:45:56.462655",
+            "endDate": "2024-08-05T15:45:56.462655",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "c2542015-6125-4c1e-a2d1-45c97a4b8f2d",
+        "name": "Jennifer Davis",
+        "phone": "+76 9687705241",
+        "status": "CHECKIN",
+        "typeRoom": "9",
+        "room": "909",
+        "email": "2b4af73f8c@example.com",
+        "documentNumber": "6015672467",
+        "accommodation": {
+            "startDate": "2024-08-16T15:45:56.462984",
+            "endDate": "2024-08-27T15:45:56.462984",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "458d66e4-4f7a-41fc-b071-c974ba2b9011",
+        "name": "Robert Smith",
+        "phone": "+58 1469367427",
+        "status": "BOOKING",
+        "typeRoom": "6",
+        "room": "606",
+        "email": "e6fbdddd81@example.com",
+        "documentNumber": "2960839493",
+        "accommodation": {
+            "startDate": "2024-08-18T15:45:56.463307",
+            "endDate": "2024-08-21T15:45:56.463307",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "6c7e950c-6cdb-41c0-abc9-e2c77667e12b",
+        "name": "Jennifer Jones",
+        "phone": "+6 6465983004",
+        "status": "BOOKING",
+        "typeRoom": "2",
+        "room": "102",
+        "email": "a518000db3@example.com",
+        "documentNumber": "3966718938",
+        "accommodation": {
+            "startDate": "2024-08-03T15:45:56.463374",
+            "endDate": "2024-08-15T15:45:56.463374",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "5575e0fb-7c37-43ee-b73b-65fc42cee349",
+        "name": "Robert Brown",
+        "phone": "+94 2317850618",
+        "status": "CANCELED",
+        "typeRoom": "9",
+        "room": "909",
+        "email": "9b521c81b8@example.com",
+        "documentNumber": "4519776236",
+        "accommodation": {
+            "startDate": "2024-08-15T15:45:56.463438",
+            "endDate": "2024-08-23T15:45:56.463438",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "a757c2be-c65b-4922-9e4f-b0018ae696f6",
+        "name": "John Wilson",
+        "phone": "+31 2872311207",
+        "status": "CHECKOUT",
+        "typeRoom": "9",
+        "room": "809",
+        "email": "f46964e78f@example.com",
+        "documentNumber": "6324951676",
+        "accommodation": {
+            "startDate": "2024-08-08T15:45:56.463461",
+            "endDate": "2024-08-09T15:45:56.463461",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "101ec17b-b87e-4a3c-950e-282c0ef10936",
+        "name": "Michael Jones",
+        "phone": "+45 7588103550",
+        "status": "PREBOOKING",
+        "typeRoom": "6",
+        "room": "606",
+        "email": "b042841719@example.com",
+        "documentNumber": "1965442131",
+        "accommodation": {
+            "startDate": "2024-08-03T15:45:56.463483",
+            "endDate": "2024-08-12T15:45:56.463483",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "e8830d8c-c25a-47de-98ca-39c8dfcaf509",
+        "name": "John Johnson",
+        "phone": "+9 4262437172",
+        "status": "CHECKOUT",
+        "typeRoom": "7",
+        "room": "607",
+        "email": "5657054115@example.com",
+        "documentNumber": "1562887561",
+        "accommodation": {
+            "startDate": "2024-07-31T15:45:56.463505",
+            "endDate": "2024-08-08T15:45:56.463505",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "69a56e50-7ab3-4aba-8cf1-e2ff5a12eff7",
+        "name": "Mary Jones",
+        "phone": "+96 7524709027",
+        "status": "CANCELED",
+        "typeRoom": "3",
+        "room": "203",
+        "email": "2796bc85c1@example.com",
+        "documentNumber": "1116676858",
+        "accommodation": {
+            "startDate": "2024-08-14T15:45:56.463530",
+            "endDate": "2024-08-22T15:45:56.463530",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "356003c6-d05e-49f8-a91b-7107a4040d45",
+        "name": "James Williams",
+        "phone": "+47 1234014311",
+        "status": "CANCELED",
+        "typeRoom": "3",
+        "room": "303",
+        "email": "359c847252@example.com",
+        "documentNumber": "1833048101",
+        "accommodation": {
+            "startDate": "2024-08-10T15:45:56.463714",
+            "endDate": "2024-08-18T15:45:56.463714",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "3bf82591-b54c-435e-adc5-0ee49190557e",
+        "name": "Michael Brown",
+        "phone": "+17 8546531458",
+        "status": "BOOKING",
+        "typeRoom": "3",
+        "room": "303",
+        "email": "b85371ce78@example.com",
+        "documentNumber": "9352806939",
+        "accommodation": {
+            "startDate": "2024-07-31T15:45:56.463791",
+            "endDate": "2024-08-09T15:45:56.463791",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "0f03f6d8-aeee-40a6-99f5-9926b4051843",
+        "name": "John Johnson",
+        "phone": "+93 2315673707",
+        "status": "BOOKING",
+        "typeRoom": "4",
+        "room": "404",
+        "email": "fa4076ecbc@example.com",
+        "documentNumber": "1007575424",
+        "accommodation": {
+            "startDate": "2024-07-27T15:45:56.463854",
+            "endDate": "2024-07-29T15:45:56.463854",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "a8d01bd8-7131-490b-98f2-81780cfb6101",
+        "name": "Jennifer Brown",
+        "phone": "+21 3972785630",
+        "status": "PREBOOKING",
+        "typeRoom": "5",
+        "room": "505",
+        "email": "509bd91d62@example.com",
+        "documentNumber": "4811685005",
+        "accommodation": {
+            "startDate": "2024-07-25T15:45:56.463939",
+            "endDate": "2024-08-03T15:45:56.463939",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "33245504-0795-4cb7-a5e5-4204d29dabf4",
+        "name": "Jennifer Smith",
+        "phone": "+2 4533516136",
+        "status": "CHECKIN",
+        "typeRoom": "7",
+        "room": "607",
+        "email": "5f1ca74ce3@example.com",
+        "documentNumber": "7099336012",
+        "accommodation": {
+            "startDate": "2024-07-27T15:45:56.464001",
+            "endDate": "2024-08-06T15:45:56.464001",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "28f96bad-a215-4d70-b17f-07bc607b4333",
+        "name": "Patricia Brown",
+        "phone": "+21 8529178634",
+        "status": "CHECKIN",
+        "typeRoom": "8",
+        "room": "708",
+        "email": "401ccdc1cb@example.com",
+        "documentNumber": "4649399175",
+        "accommodation": {
+            "startDate": "2024-08-20T15:45:56.464064",
+            "endDate": "2024-08-24T15:45:56.464064",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "4f8560fa-55a6-460e-ac6c-aa227c0a60af",
+        "name": "James Miller",
+        "phone": "+96 5280370986",
+        "status": "CHECKIN",
+        "typeRoom": "7",
+        "room": "607",
+        "email": "5fbb9fe8a1@example.com",
+        "documentNumber": "4742726463",
+        "accommodation": {
+            "startDate": "2024-07-29T15:45:56.464114",
+            "endDate": "2024-08-07T15:45:56.464114",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "b88bff78-484b-4ad8-ace3-ab4039a708bf",
+        "name": "Jennifer Jones",
+        "phone": "+65 3321894085",
+        "status": "PREBOOKING",
+        "typeRoom": "4",
+        "room": "304",
+        "email": "d793872253@example.com",
+        "documentNumber": "6782104606",
+        "accommodation": {
+            "startDate": "2024-08-03T15:45:56.464163",
+            "endDate": "2024-08-07T15:45:56.464163",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "13c76124-0032-45a2-9928-c16b2a56b270",
+        "name": "Michael Davis",
+        "phone": "+61 5499289449",
+        "status": "PREBOOKING",
+        "typeRoom": "10",
+        "room": "1010",
+        "email": "3b8ef5ad88@example.com",
+        "documentNumber": "5701645265",
+        "accommodation": {
+            "startDate": "2024-07-27T15:45:56.464235",
+            "endDate": "2024-07-28T15:45:56.464235",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "66cc690b-8209-4807-90b8-a270684f78be",
+        "name": "James Johnson",
+        "phone": "+44 6787091140",
+        "status": "BOOKING",
+        "typeRoom": "1",
+        "room": "101",
+        "email": "1cc50879d7@example.com",
+        "documentNumber": "6164116295",
+        "accommodation": {
+            "startDate": "2024-08-05T15:45:56.464296",
+            "endDate": "2024-08-14T15:45:56.464296",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "0aeeed71-2999-4953-b7d7-6925ecb630b4",
+        "name": "Patricia Williams",
+        "phone": "+24 5584133431",
+        "status": "CHECKOUT",
+        "typeRoom": "9",
+        "room": "809",
+        "email": "3363211350@example.com",
+        "documentNumber": "5063891179",
+        "accommodation": {
+            "startDate": "2024-08-01T15:45:56.464357",
+            "endDate": "2024-08-13T15:45:56.464357",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "ccbf1e8d-d301-4245-8817-7670de4b3e52",
+        "name": "Michael Davis",
+        "phone": "+89 8371733696",
+        "status": "CHECKOUT",
+        "typeRoom": "10",
+        "room": "1010",
+        "email": "8f364e9990@example.com",
+        "documentNumber": "3044666849",
+        "accommodation": {
+            "startDate": "2024-07-25T15:45:56.464417",
+            "endDate": "2024-07-29T15:45:56.464417",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "a577454a-461d-4c41-9f52-6d73938d6d8e",
+        "name": "James Miller",
+        "phone": "+20 5698508567",
+        "status": "PREBOOKING",
+        "typeRoom": "7",
+        "room": "707",
+        "email": "5e9acbb181@example.com",
+        "documentNumber": "4217678924",
+        "accommodation": {
+            "startDate": "2024-08-13T15:45:56.464471",
+            "endDate": "2024-08-20T15:45:56.464471",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "fdb3b92b-1493-4903-a8bc-806132c87a42",
+        "name": "Mary Williams",
+        "phone": "+48 9647724152",
+        "status": "CANCELED",
+        "typeRoom": "5",
+        "room": "505",
+        "email": "9cbb25058b@example.com",
+        "documentNumber": "7727846035",
+        "accommodation": {
+            "startDate": "2024-07-26T15:45:56.464523",
+            "endDate": "2024-08-03T15:45:56.464523",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "947ceb42-565a-4254-9952-39b8fc05cb06",
+        "name": "Michael Jones",
+        "phone": "+27 1132121220",
+        "status": "CANCELED",
+        "typeRoom": "3",
+        "room": "303",
+        "email": "2e9688d979@example.com",
+        "documentNumber": "3824392949",
+        "accommodation": {
+            "startDate": "2024-07-28T15:45:56.464568",
+            "endDate": "2024-08-10T15:45:56.464568",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "a0ddd522-bce5-4361-9d2e-d1cb4a49e58b",
+        "name": "Robert Brown",
+        "phone": "+10 1268625887",
+        "status": "CHECKIN",
+        "typeRoom": "10",
+        "room": "910",
+        "email": "1227bccdad@example.com",
+        "documentNumber": "3009984195",
+        "accommodation": {
+            "startDate": "2024-07-28T15:45:56.464616",
+            "endDate": "2024-08-01T15:45:56.464616",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "edf60547-db64-47ed-a256-6d3454a4ab1f",
+        "name": "Linda Wilson",
+        "phone": "+71 5891712580",
+        "status": "CHECKOUT",
+        "typeRoom": "5",
+        "room": "405",
+        "email": "cc042f5889@example.com",
+        "documentNumber": "8663422219",
+        "accommodation": {
+            "startDate": "2024-08-13T15:45:56.464666",
+            "endDate": "2024-08-14T15:45:56.464666",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "45cc17fe-880b-45bb-8a5d-017a231b874a",
+        "name": "Jennifer Smith",
+        "phone": "+17 8107623127",
+        "status": "CHECKIN",
+        "typeRoom": "2",
+        "room": "102",
+        "email": "fdb0e452b4@example.com",
+        "documentNumber": "5157451670",
+        "accommodation": {
+            "startDate": "2024-08-16T15:45:56.464718",
+            "endDate": "2024-08-24T15:45:56.464718",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "2153b81c-b48f-4341-ba23-45a6ebae034a",
+        "name": "Linda Johnson",
+        "phone": "+79 4996574802",
+        "status": "PREBOOKING",
+        "typeRoom": "2",
+        "room": "202",
+        "email": "01faead032@example.com",
+        "documentNumber": "2843275897",
+        "accommodation": {
+            "startDate": "2024-08-02T15:45:56.464769",
+            "endDate": "2024-08-09T15:45:56.464769",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "cf69f35d-ec0f-4011-9935-63e803522a99",
+        "name": "Mary Brown",
+        "phone": "+84 5621367223",
+        "status": "PREBOOKING",
+        "typeRoom": "2",
+        "room": "102",
+        "email": "1b6dcb152e@example.com",
+        "documentNumber": "8115559246",
+        "accommodation": {
+            "startDate": "2024-07-31T15:45:56.464940",
+            "endDate": "2024-08-14T15:45:56.464940",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "de9fdf5b-5487-41a7-a037-4ce2823a53f8",
+        "name": "John Williams",
+        "phone": "+16 7347000760",
+        "status": "PREBOOKING",
+        "typeRoom": "6",
+        "room": "606",
+        "email": "0524dab67c@example.com",
+        "documentNumber": "4379684079",
+        "accommodation": {
+            "startDate": "2024-08-21T15:45:56.464989",
+            "endDate": "2024-09-03T15:45:56.464989",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "4a3858ce-4aa9-4939-8895-bac77efaaa41",
+        "name": "John Jones",
+        "phone": "+24 5227064136",
+        "status": "CANCELED",
+        "typeRoom": "7",
+        "room": "707",
+        "email": "23587ee00c@example.com",
+        "documentNumber": "5729145119",
+        "accommodation": {
+            "startDate": "2024-08-15T15:45:56.465089",
+            "endDate": "2024-08-17T15:45:56.465089",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "17f73563-cc27-4b9c-8401-d899216c0970",
+        "name": "Mary Miller",
+        "phone": "+68 4291838567",
+        "status": "PREBOOKING",
+        "typeRoom": "6",
+        "room": "606",
+        "email": "fcde88030d@example.com",
+        "documentNumber": "4888554399",
+        "accommodation": {
+            "startDate": "2024-08-15T15:45:56.465114",
+            "endDate": "2024-08-28T15:45:56.465114",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "ece46bca-bb7b-4568-8818-6d4fd70f3633",
+        "name": "James Smith",
+        "phone": "+18 8786860069",
+        "status": "BOOKING",
+        "typeRoom": "3",
+        "room": "303",
+        "email": "5f3620caed@example.com",
+        "documentNumber": "6014800999",
+        "accommodation": {
+            "startDate": "2024-08-01T15:45:56.465167",
+            "endDate": "2024-08-10T15:45:56.465167",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "b72f7675-d9af-4ca1-8d10-b66e0e9355fb",
+        "name": "Mary Williams",
+        "phone": "+42 5780694388",
+        "status": "CHECKOUT",
+        "typeRoom": "1",
+        "room": "101",
+        "email": "601d6f5924@example.com",
+        "documentNumber": "5656823766",
+        "accommodation": {
+            "startDate": "2024-08-01T15:45:56.465226",
+            "endDate": "2024-08-15T15:45:56.465226",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "d1a4a7b4-f799-416e-8381-9e67088082e2",
+        "name": "James Miller",
+        "phone": "+64 1669811338",
+        "status": "CHECKOUT",
+        "typeRoom": "3",
+        "room": "203",
+        "email": "6d36b4c792@example.com",
+        "documentNumber": "7950965903",
+        "accommodation": {
+            "startDate": "2024-07-26T15:45:56.465250",
+            "endDate": "2024-08-03T15:45:56.465250",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "71023f7b-b36e-4f2d-af6e-5b54113f4d45",
+        "name": "Michael Williams",
+        "phone": "+14 9269119757",
+        "status": "BOOKING",
+        "typeRoom": "8",
+        "room": "708",
+        "email": "1f284d5884@example.com",
+        "documentNumber": "7985602078",
+        "accommodation": {
+            "startDate": "2024-08-02T15:45:56.465274",
+            "endDate": "2024-08-16T15:45:56.465274",
+            "key": "selection"
+        }
+    },
+    {
+        "id": "28a4755b-8644-4600-8fed-ffda38dc8ed4",
+        "name": "Linda Smith",
+        "phone": "+77 5787445213",
+        "status": "CHECKOUT",
+        "typeRoom": "10",
+        "room": "910",
+        "email": "9c3a7f3a7a@example.com",
+        "documentNumber": "6549388037",
+        "accommodation": {
+            "startDate": "2024-07-27T15:45:56.465334",
+            "endDate": "2024-07-31T15:45:56.465334",
+            "key": "selection"
+        }
+    }
+]

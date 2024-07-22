@@ -146,7 +146,7 @@ export default function BookingForm() {
     }
   }
 
-  function renderPrice() {
+  function renderInformationAccommodation() {
     if (typeRoom != null && room != null && mockTypeRoom[typeRoom] != null) {
       const capacity = mockTypeRoom[typeRoom].capacity;
       const nights = differenceInDays(
@@ -155,7 +155,10 @@ export default function BookingForm() {
       );
 
       return (
-        <div className="d-flex flex-column justify-content-center align-items-center flex-grow-1">
+        <div
+          id="booking-informations-accommodation"
+          className="d-flex flex-column justify-content-center align-items-center flex-grow-1"
+        >
           <p>
             {nights > 1 ? `${nights} nights` : `${nights} night`},{" "}
             {capacity > 1 ? `${capacity} adults` : `${capacity} adult`}
@@ -184,11 +187,14 @@ export default function BookingForm() {
     return (
       <Form onSubmit={handleSubmit(onSubmit)}>
         <div className="mt-2 mb-2 d-flex justify-content-between">
-          <h5>{isEditing ? "Edit Booking" : "New Booking"}</h5>
+          <h5 id="booking-title">
+            {isEditing ? "Edit Booking" : "New Booking"}
+          </h5>
           <div className="d-flex">
             {isEditing ? (
               <div className="mx-2">
                 <Button
+                  id="button-delete-booking"
                   variant="outline-danger"
                   type="button"
                   onClick={onDelete}
@@ -198,7 +204,7 @@ export default function BookingForm() {
               </div>
             ) : null}
             <div className="mx-2">
-              <Button variant="primary" type="submit">
+              <Button id="button-save-booking" variant="primary" type="submit">
                 Save
               </Button>
             </div>
@@ -267,7 +273,7 @@ export default function BookingForm() {
                     </Form.Select>
                     {renderError(errors.room)}
                   </Form.Group>
-                  {renderPrice()}
+                  {renderInformationAccommodation()}
                 </Col>
               </Row>
             </Col>
@@ -350,7 +356,7 @@ export default function BookingForm() {
             <Button variant="secondary" onClick={onCancelDelete}>
               Cancel
             </Button>
-            <Button variant="danger" onClick={handleDelete}>
+            <Button id="button-confirm-delete" variant="danger" onClick={handleDelete}>
               Delete
             </Button>
           </Modal.Footer>

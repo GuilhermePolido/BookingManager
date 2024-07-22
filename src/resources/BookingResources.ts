@@ -21,9 +21,11 @@ class BookingResources {
     pageSize: number;
   }> => {
     let data: BookingModel[] = list;
+    let count = data.length;
 
     if (customFilter != null && customFilter?.length > 0) {
       data = data.filter((booking) => booking.status == customFilter);
+      count = data.length;
     }
 
     if (search != null && search?.length > 0) {
@@ -39,7 +41,7 @@ class BookingResources {
 
     return new Promise((resolve) => {
       setTimeout(() => {
-        resolve({ data, count: list.length, page, pageSize });
+        resolve({ data, count, page, pageSize });
       }, 1000);
     });
   };

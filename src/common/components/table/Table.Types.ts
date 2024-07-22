@@ -28,7 +28,7 @@ export type TableProps<T> = {
   columns: TableColumn<T>[];
   pageSize?: number;
   onSearch: (configs: SearchConfigs) => Promise<PaginatedResponse<T>>;
-  renderSelectFilter?: (customFilter: any, setCustomFilter: (customFilter: any) => void) => ReactNode;
+  renderSelectFilter?: (id:string, customFilter: any, setCustomFilter: (customFilter: any) => void) => ReactNode;
 };
 
 export type TablePagination = {

@@ -34,6 +34,7 @@ export default function Bookings() {
   }
 
   function renderSelectFilter(
+    id: string,
     customFilter: any,
     setCustomFilter: (customFilter: any) => void
   ) {
@@ -41,6 +42,7 @@ export default function Bookings() {
       <div style={{ width: 200 }}>
         <Form.Group className="mb-3 ms-3">
           <Form.Select
+            id={id}
             value={customFilter}
             onChange={(event) => setCustomFilter(event.target.value)}
           >
@@ -61,14 +63,14 @@ export default function Bookings() {
       <Card className="mt-4 mb-4 p-3">
         <div className="mt-2 mb-2 d-flex justify-content-between">
           <h5>Bookings</h5>
-          <Link to="/bookings/new" className="btn btn-primary">
+          <Link id="button-new-booking" to="/bookings/new" className="btn btn-primary">
             New Booking
           </Link>
         </div>
         <Table
           columns={columns}
           onClick={handleClickOpen}
-          id="dsdsadas"
+          id="bookings"
           onSearch={getData}
           renderSelectFilter={renderSelectFilter}
         />

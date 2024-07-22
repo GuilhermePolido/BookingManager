@@ -117,7 +117,10 @@ export default function Table<T extends object>({
   function renderTable() {
     if (loading) {
       return (
-        <div className="d-flex justify-content-center align-items-center flex-grow-1">
+        <div
+          id={`loading-table-${id}`}
+          className="d-flex justify-content-center align-items-center flex-grow-1"
+        >
           <Spinner animation="border" variant="primary" />
         </div>
       );
@@ -125,7 +128,10 @@ export default function Table<T extends object>({
 
     if (data.length === 0) {
       return (
-        <div className="d-flex justify-content-center align-items-center flex-grow-1 flex-column">
+        <div
+          id={`empty-table-${id}`}
+          className="d-flex justify-content-center align-items-center flex-grow-1 flex-column"
+        >
           <div>
             <FaListUl className="text-secondary" size={30} />
           </div>
@@ -138,7 +144,12 @@ export default function Table<T extends object>({
 
     return (
       <>
-        <BsTable striped hover className="table-hover-clickable">
+        <BsTable
+          id={`table-${id}`}
+          striped
+          hover
+          className="table-hover-clickable"
+        >
           <thead>
             <tr>
               {columns.map((column) => (
@@ -164,13 +175,13 @@ export default function Table<T extends object>({
         </BsTable>
         <div className="d-flex justify-content-between flex-grow-1 align-items-end">
           <div className="d-none d-sm-block">
-            <small className="text-secondary">
+            <small id="showing-table" className="text-secondary">
               Showing from {(page - 1) * pageSize + 1} to {page * pageSize} of{" "}
               {totalItems}
             </small>
           </div>
           <div className="d-flex justify-content-end flex-grow-1">
-            <Pagination>
+            <Pagination id={`pagination-table-${id}`}>
               <Pagination.First onClick={handleFirst} />
               <Pagination.Prev onClick={handlePrev} />
               {paginationItems}
@@ -188,20 +199,26 @@ export default function Table<T extends object>({
       <div className="d-flex">
         <InputGroup className="mb-3">
           <Form.Control
+            id={`search-table-${id}`}
             placeholder="Type to search"
             value={search}
             onChange={(event: any) => setSearch(event.target.value)}
             onKeyUp={handleKeyUp}
+            name="search-table"
           />
           <Button
             variant="outline-primary"
-            id="search-button"
+            id={`button-search-table-${id}`}
             onClick={getData}
           >
             Search
           </Button>
         </InputGroup>
-        {renderSelectFilter?.(customFilter, setCustomFilter)}
+        {renderSelectFilter?.(
+          `custom-filter-table-${id}`,
+          customFilter,
+          setCustomFilter
+        )}
       </div>
       {renderTable()}
     </div>
