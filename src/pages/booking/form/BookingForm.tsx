@@ -13,6 +13,7 @@ import { bookingsSlice } from "@redux/slices/bookingSlice";
 import BookingResources from "src/resources/BookingResources";
 import { StoreStates } from "@redux/store";
 import { getFreeRooms } from "src/common/utils/RoomsUtils";
+import { toEntity, toStore } from "@redux/slices/bookingSliceUtils";
 
 export default function BookingForm() {
   const navigate = useNavigate();
@@ -23,7 +24,8 @@ export default function BookingForm() {
   const [showConfirm, setShowConfirm] = useState(false);
 
   const dispatch = useDispatch();
-  const { bookings } = useSelector((state: StoreStates) => state.bookings);
+  const { bookings: bookingsStore } = useSelector((state: StoreStates) => state.bookings);
+  const bookings = bookingsStore.map(toEntity);
   const { createNewBooking, updateBooking, deleteBooking } =
     bookingsSlice.actions;
 
@@ -127,9 +129,9 @@ export default function BookingForm() {
     console.log(data, errors);
 
     if (isEditing) {
-      dispatch(updateBooking(data));
+      dispatch(updateBooking(toStore(data)));
     } else {
-      dispatch(createNewBooking(data));
+      dispatch(createNewBooking(toStore(data)));
     }
 
     navigate("/");
@@ -356,7 +358,11 @@ export default function BookingForm() {
             <Button variant="secondary" onClick={onCancelDelete}>
               Cancel
             </Button>
-            <Button id="button-confirm-delete" variant="danger" onClick={handleDelete}>
+            <Button
+              id="button-confirm-delete"
+              variant="danger"
+              onClick={handleDelete}
+            >
               Delete
             </Button>
           </Modal.Footer>

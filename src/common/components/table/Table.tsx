@@ -27,7 +27,7 @@ export default function Table<T extends object>({
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [data, setData] = useState<T[]>([]);
-  const [customFilter, setCustomFilter] = useState<any>(null);
+  const [customFilter, setCustomFilter] = useState<any>();
 
   const totalPages = useMemo(() => {
     return Math.ceil(totalItems / pageSize);

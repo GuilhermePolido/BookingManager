@@ -1,27 +1,35 @@
-import { createSelector, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { v4 as uuidv4 } from "uuid";
-import { BookingModel } from "src/models/BookingsModel";
-import { StoreStates } from "@redux/store";
+
+export interface BookingStoreModel {
+  id?: string;
+  typeRoom: string;
+  room: string;
+  name: string;
+  email: string;
+  phone: string;
+  documentNumber: string;
+  status?: "PREBOOKING" | "BOOKING" | "CHECKIN" | "CHECKOUT" | "CANCELED";
+  accommodation: {
+      endDate: string;
+      startDate: string;
+      key: string,
+  }
+}
 
 export type BookingsState = {
-  bookings: BookingModel[];
+  bookings: BookingStoreModel[];
 };
 
 const initialState: BookingsState = {
   bookings: JSON.parse(localStorage.getItem("bookings") || "[]"),
 };
 
-const selectBookingsState = (state: StoreStates) => state.bookings;
-export const stateBookingsSlice = createSelector(
-  selectBookingsState,
-  (bookings) => bookings
-);
-
 export const bookingsSlice = createSlice({
   name: "bookings",
   initialState,
   reducers: {
-    createNewBooking: (state, action: PayloadAction<BookingModel>) => {
+    createNewBooking: (state, action: PayloadAction<BookingStoreModel>) => {
       const newBooking = { id: uuidv4(), ...action.payload };
       state.bookings.push(newBooking);
       localStorage.setItem("bookings", JSON.stringify(state.bookings));
@@ -32,7 +40,7 @@ export const bookingsSlice = createSlice({
       );
       localStorage.setItem("bookings", JSON.stringify(state.bookings));
     },
-    updateBooking: (state, action: PayloadAction<BookingModel>) => {
+    updateBooking: (state, action: PayloadAction<BookingStoreModel>) => {
       const index = state.bookings.findIndex(
         (item) => item.id === action.payload.id
       );

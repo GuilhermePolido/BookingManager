@@ -8,9 +8,11 @@ import { useSelector } from "react-redux";
 import { StoreStates } from "@redux/store";
 import { format } from "date-fns";
 import { Card, Form } from "react-bootstrap";
+import { toEntity } from "@redux/slices/bookingSliceUtils";
 
 export default function Bookings() {
-  const { bookings } = useSelector((state: StoreStates) => state.bookings);
+  const { bookings: bookingsStore } = useSelector((state: StoreStates) => state.bookings);
+  const bookings = bookingsStore.map(toEntity);
   const navigate = useNavigate();
   const columns: TableColumn<BookingModel>[] = [
     { field: "room", title: "Room" },
