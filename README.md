@@ -10,6 +10,9 @@ This room booking management app allows users to book hotel rooms, manage their 
 - Booking management
 - Room search and filter
 
+## Live demo
+https://booking-manager-tau.vercel.app/
+
 ## Technologies Used
 
 - TypeScript
